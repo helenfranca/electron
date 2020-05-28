@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style type="text/css">
+        body{
+            background-color: aquamarine;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <div>
+        <input type="text" name="pol" id="pol">
+        <div id="cm"></div>
+        <button onClick="converter()">Converter</button>
+    </div>
+    <script type="text/javascript">
+        function converter(){
+            let pol = document.getElementById("pol").value;
+            let cm = document.getElementById("cm");
+
+            cm.innerHTML = pol * 2.54 + "cm";
+        }
+    </script>
+  </body>
+</html>
